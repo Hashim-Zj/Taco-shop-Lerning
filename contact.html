@@ -3,62 +3,82 @@
 
   <head>
     <meta charset="UTF-8">
+    <meta name="author" content="HashimMohammed tp">
+    <meta name="Discription" content="A little website for to sell tacos">
     <meta name="viewport" content="device-width, initial-scale=1.0">
-    <title>Contact us:</title>
+    <title>Boom Taco !</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/main.js" defer></script>
   </head>
 
   <body>
-    <main>
-      <section>
-        <h1>Contact Us</h1>
-        <nav>
-          <ul>
+    <header class="header">
+      <h1 class="header__h1">Contact Us</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
 
-            <li><a href="/">Home</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="about.html">About</a></li>
 
-            <li><a href="/#About">About LTS</a></li>
+        </ul>
+      </nav>
+    </header>
 
-            <li><a href="/#menu">Our Menu</a></li>
+    <section class="hero">
+      <figure>
+        <img src="./img/tacos_close_up_400x260.png" alt="loding..." width="1000" height="649" loading="lazy">
+        <figcaption class="offscreen">Little Taco Shop Tacos</figcaption>
+      </figure>
+    </section>
 
-            <li><a href="hours.html">Store Hours</a></li>
+    <main class="main">
+      <article class="main__article">
+        <h2>Our Location</h2>
+        <address>
+          444 Taco Temptation Lane, Sute T <br>
+          Krisna City, Ph 444-677304 <br><br>
+          phone: <a href="tel:+444-676304">444-676304</a>
+        </address>
+      </article>
+      <article class="main__article contact">
+        <h2 class="contact__h2">Our Contact Form</h2>
+        <form action="" class="contact__form">
+          <fieldset class="contact__fieldset">
+            <legend class="offscreen">Send Us A Message</legend>
 
-          </ul>
-        </nav>
-        <figure>
-          <img src="./img/tacos_close_up_400x260.png" alt="loding..." width="400" height="260" loading="lazy">
-          <figcaption>Little Taco Shop Tacos</figcaption>
-        </figure>
-      </section>
-      <section id="contact">
-        <h1>Our Contact Form</h1>
-        <form action="">
-          <fieldset>
-            <legend>Send Us A Message</legend>
-            <p>
-              <label for="name">Name:</label>
-              <input type="text" id="name" placeholder="Your name">
+            <p class="contact__p">
+              <label class="contact__label" for="name">Name:</label>
+              <input class="contact__input" type="text" id="name" placeholder="Your name">
             </p>
-            <p>
-              <label for="email">Email:</label>
-              <input type="email" id="email" placeholder="Your email">
+            <p class="contact__p">
+              <label class="contact__label" for="email">Email:</label>
+              <input class="contact__input" type="email" id="email" placeholder="Your email">
             </p>
-            <legend><label for="message">Your Message:</label></legend>
-            <textarea name="" rows="10" cols="30" id="message" placeholder="Type your message here."></textarea>
+            <p class="contact__p">
+              <label class="contact__label" for="message">Your Message:</label>
+              <br>
+              <textarea class="contact__textarea" name="" rows="10" cols="30" id="message"
+                placeholder="Type your message here."></textarea>
+            </p>
 
           </fieldset>
-          
-            <button type="submit">Send</button>
-            <button type="reset">Reset</button>
+
+          <button class="contact__button" type="submit">Send</button>
+          <button class="contact__button" type="reset">Reset</button>
 
         </form>
-        <h2>Our Location</h2>
-        <p>444 <em>Taco Temptation Lane, Sute T <br>Krisna City, Ph 444-677304</em></p>
-        <p><em>phone:&nbsp;&nbsp;</em><a href="tel:+444-676304">444-676304</a></p>
-      </section>
-      <footer>
-        <p><a href="#">Back to Top</a></p>
-        <hr>
-        <p>Copyright &copy; The Little Taco Shop.</p>
-      </footer>
+      </article>
+
+    </main>
+    <footer class="footer">
+      <p>
+        <span class="nowrap"> Copyright &copy; <time id="year" datetime=""></time> </span>
+        <span class="nowrap">The Little Taco Shop</span>
+      </p>
+    </footer>
+  </body>
+
+</html>
